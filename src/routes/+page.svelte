@@ -5,6 +5,7 @@
 	// Stats Icons
 	import IoMdRocket from 'svelte-icons/io/IoMdRocket.svelte'
 	import FaServer from 'svelte-icons/fa/FaServer.svelte'
+	import GoLink from 'svelte-icons/go/GoLink.svelte'
 	
 	// Proud to work with logos
 	import LogoHoncho from '$lib/img/logo/honcho.svg?raw'
@@ -31,6 +32,11 @@
 		{
 			icon: FaServer,
 			heading: 'Backend',
+			text: 'Engineering the backbone of your web applications, I deliver robust and scalable solutions to power your digital platforms.'
+		},
+		{
+			icon: GoLink,
+			heading: 'Full Stack Integration',
 			text: 'Engineering the backbone of your web applications, I deliver robust and scalable solutions to power your digital platforms.'
 		}
 	]
@@ -66,15 +72,6 @@
 			</div>
 	</section>
 
-	<!-- <section class="flex gap-10 text-center md:text-left">
-		{#each stats as stat}
-			<div class="space-y-1">
-				<span class="font-heading-token text-7xl">{stat.value}</span>
-				<p class="text-primary-500">{stat.name}</p>
-			</div>
-		{/each}
-	</section> -->
-
 	<section class="w-full">
 		<h2 class="h3 text-gray-400 text-center">
 			Proudly worked with:
@@ -86,14 +83,14 @@
 		</div>
 	</section>
 
-	<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-40">
+	<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-40">
 		{#each showcaseSkills as skill}
 			<div class="card p-4 flex flex-col gap-4 items-center">
 				<div class="w-16 mx-auto text-primary-700">
 					<svelte:component this={skill.icon} />
 				</div>
 					<h3 class="h3 font-medium">{skill.heading}</h3>
-				<p class="font-medium dark:text-gray-100 text-gray-600">{skill.text}</p>
+				<p class="font-medium dark:text-gray-100 text-gray-600 p-4 text-center">{skill.text}</p>
 			</div>
 		{/each}
 	</section>
