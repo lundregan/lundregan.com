@@ -8,6 +8,10 @@
 	// Floating UI for Popups
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
 	import { storePopup } from '@skeletonlabs/skeleton';
+
+	// Fonts
+	import "@fontsource/roboto";
+	import "@fontsource/league-spartan";
 	
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 
@@ -38,11 +42,6 @@
 					rounded="rounded-full"
 				/>
 			</svelte:fragment>
-			<div class="w-full justify-center">
-				<a href='/' class="">Home</a>
-				<a href='/about'>About</a>
-				<a href='/projects'>Projects</a>
-			</div>
 			<svelte:fragment slot="trail">
 				<div class="flex gap-4 items-center">
 					<select class="select select-xs" value="{theme}" on:change={changeTheme}>
@@ -56,7 +55,7 @@
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
-	<!-- Page Route Content -->
+
 	<slot />
 
 	<svelte:fragment slot="pageFooter">
