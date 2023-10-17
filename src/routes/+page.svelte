@@ -15,6 +15,26 @@
 	// Components
 	import Collabs from '$lib/collabs.svelte'
 
+	const smoothScroll = (event) => {
+		event.preventDefault()
+		const link = event.currentTarget
+		const anchorId = new URL(link.href).hash.replace('#', '')
+
+		// console.log(anchorId)
+		const anchor = document.getElementById(anchorId)
+		// console.log(anchor)
+
+		console.log(anchor.offsetTop)
+		console.log(window.scrollY)
+		try{
+		window.scrollTo({
+			top: anchor.offsetTop,
+			behavior: 'smooth'
+		})}catch(e){
+			console.log(e)
+		}
+	}
+
 	const stats = [
 		{
 			value: '30+',
@@ -71,7 +91,8 @@
 		
 			<div class="lg:max-w-2xl text-center md:text-left">
 				<h1 class="text-primary font-bold h1 font-serif">Hey, I'm Ethan👋</h1>
-				<p class="text-3xl dark:text-gray-300 font-medium text-gray-700 mt-8 font-league">A dynamic and passionate Developer with 3 years of experience in crafting seamless, responsive, and user-friendly web applications. Always eager to <a class="anchor" href="#about">learn more</a> and take on interesting new challenges. </p>
+				<p class="text-3xl dark:text-gray-300 font-medium text-gray-700 mt-8 font-league">
+					A dynamic and passionate Developer with 3 years of experience in crafting seamless, responsive, and user-friendly web applications. Always eager to <a class="anchor" href="#anchor-about" on:click={smoothScroll}>learn more</a> and take on interesting new challenges. </p>
 			</div>
 	</section>
 
@@ -86,7 +107,7 @@
 		</div>
 	</section>
 
-	<section class="flex flex-col gap-16 pt-32" id="about">
+	<section class="flex flex-col gap-16 pt-32" id="anchor-about">
 		<div class="text-xl font-medium">
 			<div class="relative">
 				<h1 class="h1 font-medium mb-8 font-serif">About</h1>
@@ -106,7 +127,8 @@
 					<span>You can alway</span>
 					<a
 						href="mailto:contact@lundregan.com?subject=Hello Ethan - Contacted from  From Lundregan.com"
-						class="dark:text-blue-300 hover:underline font-medium">
+						class="dark:text-blue-300 hover:underline font-medium"
+					>
 						Get in touch
 					</a>
 					<span>if you have any questions or want to collaborate on a project.</span>
