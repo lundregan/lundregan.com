@@ -25,10 +25,6 @@ export default {
 						name: 'wintry',
 						enhancements: true,
 					},
-					{
-						name: "crimson",
-						enhancements: true,
-					}
 				],
 			},
 		}),

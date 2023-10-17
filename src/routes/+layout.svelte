@@ -14,20 +14,6 @@
 	import "@fontsource/league-spartan";
 	
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
-
-	const storeTheme = localStorageStore('storeTheme', 'crimson');
-
-	const changeTheme = (e) => {
-		if (!get(storeTheme)) {
-			storeTheme.set({ theme: 'crimson' });
-		}
-
-		storeTheme.set({ theme: e.target.value });
-
-		document.body.setAttribute('data-theme', e.target.value);
-	};
-
-	$: theme = get(storeTheme).theme;
 </script>
 
 <!-- App Shell -->
@@ -43,15 +29,7 @@
 				/>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
-				<div class="flex gap-4 items-center">
-					<select class="select select-xs" value="{theme}" on:change={changeTheme}>
-						<option value="wintry">Wintry</option>
-						<option value="crimson">Crimson</option>
-					</select>
-					<div>
-						<LightSwitch />
-					</div>
-				</div>
+				<LightSwitch />
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
