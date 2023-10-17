@@ -29,6 +29,8 @@
   "type": "module",
   "dependencies": {
     "@floating-ui/dom": "1.5.2",
+    "@fontsource/league-spartan": "^5.0.15",
+    "@fontsource/roboto": "^5.0.8",
     "svelte-icons": "^2.1.0"
   }
 }
