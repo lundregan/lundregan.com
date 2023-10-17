@@ -142,7 +142,7 @@
 					<div class="w-16 mx-auto text-primary-500 py-4">
 						<svelte:component this={skill.icon} />
 					</div>
-					<h3 class="h3 font-bold text-center font-serif">{skill.heading}</h3>
+					<h2 class="h3 font-bold text-center font-serif">{skill.heading}</h2>
 					<p class="font-medium dark:text-gray-100 text-gray-600 px-4 text-center text-xl font-league">{skill.text}</p>
 				</div>
 			{/each}
