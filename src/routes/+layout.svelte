@@ -16,6 +16,13 @@
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 </script>
 
+<svelte:head>
+	<title>Lundregan.com</title>
+	<meta name="description" content="Web developer from cardiff">
+	<meta name="keywords" content="Cardiff, Web Developer, Developer, UK, Programmer">
+	<meta name="author" content="Ethan Lundregan">
+</svelte:head>
+
 <!-- App Shell -->
 <AppShell>
 	<svelte:fragment slot="header">
