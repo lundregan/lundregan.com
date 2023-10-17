@@ -83,11 +83,13 @@
 
 <main class="h-full w-full flex flex-col items-center container mx-auto pb-8 px-4 md:pb-40">
 	<section class="flex flex-row-reverse gap-16 w-full px-4 justify-between items-center min-h-[100svh]">
-			<Avatar
-				src="https://i.ibb.co/RQMCdT4/public-profile-square-styled-blue.png"
-				width="w-0 lg:w-80 w-0 lg:h-80 hidden lg:block"
-				rounded="rounded-full"
-			/>	
+			<div class="w-0 lg:w-80 w-0 lg:h-80 hidden lg:block">
+				<Avatar
+					src="https://i.ibb.co/RQMCdT4/public-profile-square-styled-blue.png"
+					width="w-full h-full"
+					rounded="rounded-full"
+				/>
+			</div>
 		
 			<div class="lg:max-w-2xl text-center md:text-left">
 				<h1 class="text-primary font-bold h1 font-serif">Hey, I'm Ethan👋</h1>
