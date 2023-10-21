@@ -98,7 +98,8 @@
 			</div>
 	</section>
 
-	<section class="w-full">
+	<!-- Honcho Request - Remove honcho projects from portfolio site -->
+	<!-- <section class="w-full">
 		<h2 class="h3 dark:text-gray-400 px-8 text-left sm:text-center font-serif">
 			Proudly worked with:
 		</h2>
@@ -107,9 +108,9 @@
 				<div class="{company.logoClass} text-gray-700 dark:text-gray-200">{@html company.logo}</div>
 			{/each}
 		</div>
-	</section>
+	</section> -->
 
-	<section class="flex flex-col gap-16 pt-32" id="anchor-about">
+	<section class="flex flex-col gap-16" id="anchor-about">
 		<div class="text-xl font-medium">
 			<div class="relative">
 				<h1 class="h1 font-medium mb-8 font-serif">About</h1>
@@ -148,10 +149,11 @@
 					<p class="font-medium dark:text-gray-100 text-gray-600 px-4 text-center text-xl font-league">{skill.text}</p>
 				</div>
 			{/each}
-			</div>
+		</div>
 	</section>
 
-	<section class="w-full mt-40">
+	<!-- Honcho Request - Remove honcho projects from portfolio site -->
+	<!-- <section class="w-full mt-40">
 		<Collabs />
-	</section>
+	</section> -->
 </main>
