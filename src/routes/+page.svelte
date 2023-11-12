@@ -14,6 +14,7 @@
 
 	// Components
 	import Collabs from '$lib/collabs.svelte'
+	import Timeline from '$lib/Timeline.svelte'
 
 	const smoothScroll = (event) => {
 		event.preventDefault()
@@ -138,6 +139,8 @@
 				</p>
 			</div>
 		</div>
+		
+		<Timeline />
 
 		<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
 			{#each showcaseSkills as skill}
