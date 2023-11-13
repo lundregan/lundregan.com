@@ -28,8 +28,8 @@
 
 <!-- component -->
 <div class="container mx-auto w-full h-full my-16">
-    <div class="relative wrap overflow-hidden p-10 h-full">
-        <div class="border-2-2 absolute border-opacity-20 border-surface-600 h-full border" style="left: 50%"></div>
+    <div class="relative wrap overflow-hidden h-full">
+        <div class="border-transparent border-2-2 absolute border-opacity-20 md:border-surface-600 h-full border" style="left: 50%"></div>
         
         {#each timelineItemsList as timelineItem, index}
             <TimelineItem data={timelineItem} index={index} />
