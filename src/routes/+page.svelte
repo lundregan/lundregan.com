@@ -93,7 +93,7 @@
 			</div>
 		
 			<div class="lg:max-w-2xl text-center md:text-left">
-				<h1 class="text-primary font-bold h1 font-serif">Hey, I'm Ethan👋</h1>
+				<h1 class="text-primary font-bold h1 font-serif">Hey, I'm Ethan <span class="motion-safe:animate-wiggle inline-block origin-bottom-right">👋</span></h1>
 				<p class="text-3xl dark:text-gray-300 font-medium text-gray-700 mt-8 font-league">
 					A dynamic and passionate Developer with 3 years of experience in crafting seamless, responsive, and user-friendly web applications. Always eager to <a class="anchor" href="#anchor-about" on:click={smoothScroll}>learn more</a> and take on interesting new challenges. </p>
 			</div>

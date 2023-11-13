@@ -13,7 +13,20 @@ export default {
 			'serif': ['Roboto', 'ui-serif', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
 			'mono': ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace',],
 		},
-		extend: {},
+		extend: {
+			keyframes: {
+				wiggle: {
+					'0%, 20%, 100%': { transform: 'rotate(0deg)' },  // Start and end of the wiggle
+					'10%': { transform: 'rotate(4deg)' },
+					'20%': { transform: 'rotate(-4deg)' },
+					'30%': { transform: 'rotate(4deg)' },  // Mid-point of the wiggle
+					'40%, 100%': { transform: 'rotate(0deg)' }  // Pausing at the end
+				}
+			},
+			animation: {
+				wiggle: 'wiggle 3s ease-in-out 4',
+			}
+		},
 	},
 	plugins: [
 		forms,
