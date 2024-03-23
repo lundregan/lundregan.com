@@ -53,12 +53,12 @@
 	]
 </script>
 
-<section class="w-full my-16">
+<section class="w-full">
     <h2 class="h2 font-medium mb-8 font-serif text-left">Technologies I'm using</h2>
     
-    <div class="flex flex-wrap justify-between items-center pt-8">
+    <div class="flex flex-wrap justify-between items-center">
         {#each skills as skill}
-            <div class="h-20 text-gray-400 px-4 { skill.iconColor ? skill.iconColor : 'hover:text-white'}">
+            <div class="h-20 md:h-28 text-gray-400 p-3 sm:p-4 { skill.iconColor ? skill.iconColor : 'hover:text-white'}">
                 <svelte:component this={skill.icon} class="transition" />
             </div>
         {/each}
