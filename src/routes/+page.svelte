@@ -67,7 +67,7 @@
 	]
 </script>
 
-<main class="h-full w-full flex flex-col gap-16 items-center container mx-auto pb-8 px-4 md:pb-40">
+<main class="h-full w-full flex flex-col gap-32 items-center container mx-auto pb-8 px-4 md:pb-40">
 	<Hero />
 
 	<!-- Honcho Request - Remove honcho projects from portfolio site -->
@@ -82,9 +82,9 @@
 		</div>
 	</section> -->
 
-	<Projects />
-
 	<Skills />
+
+	<Projects />	
 
 	<section class="flex flex-col gap-16" id="anchor-about">
 		<div class="text-xl font-medium w-full">
