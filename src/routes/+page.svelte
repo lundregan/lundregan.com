@@ -19,6 +19,7 @@
 	// sections
 	import Hero from '$lib/sections/Hero.svelte'
 	import Skills from '$lib/sections/Skills.svelte'
+	import Projects from '$lib/sections/Projects.svelte';
 
 	const stats = [
 		{
@@ -80,6 +81,8 @@
 			{/each}
 		</div>
 	</section> -->
+
+	<Projects />
 
 	<Skills />
 
