@@ -19,6 +19,7 @@
 	// sections
 	import Hero from '$lib/sections/Hero.svelte'
 	import Skills from '$lib/sections/Skills.svelte'
+	import Projects from '$lib/sections/Projects.svelte';
 
 	const stats = [
 		{
@@ -66,11 +67,10 @@
 	]
 </script>
 
-<main class="h-full w-full flex flex-col gap-16 items-center container mx-auto pb-8 px-4 md:pb-40">
+<main class="h-full w-full flex flex-col gap-32 items-center container mx-auto pb-8 px-4 md:pb-40">
 	<Hero />
 
-	<!-- Honcho Request - Remove honcho projects from portfolio site -->
-	<!-- <section class="w-full">
+	<section class="w-full">
 		<h2 class="h3 dark:text-gray-400 px-8 text-left sm:text-center font-serif">
 			Proudly worked with:
 		</h2>
@@ -79,7 +79,9 @@
 				<div class="{company.logoClass} text-gray-700 dark:text-gray-200">{@html company.logo}</div>
 			{/each}
 		</div>
-	</section> -->
+	</section>
+
+	<Projects />
 
 	<Skills />
 
