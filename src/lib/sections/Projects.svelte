@@ -1,21 +1,20 @@
 <script>
-    import imgRavencards from '$lib/img/brave_1BDbjzbySx.jpg'
+    import imgOutwardbound from '$lib/img/brave_CDgGCoCuOd.jpg?enhanced'
+    import imgHoncho from '$lib/img/7pNVapwdsB.png?enhanced'
+    import imgCpi from '$lib/img/brave_wFXVQgdXlJ.jpg?enhanced'
+    import imgEnvair from '$lib/img/brave_xoRV8bdcPu.jpg?enhanced'
+    import imgSmg from '$lib/img/brave_u8khNcDWNy.png?enhanced'
+    import imgEckoh from '$lib/img/brave_TIeRT22jcu.jpg?enhanced'
 
-    import imgOutwardbound from '$lib/img/brave_CDgGCoCuOd.jpg'
-    import imgHoncho from '$lib/img/7pNVapwdsB.png'
-    import imgCpi from '$lib/img/brave_wFXVQgdXlJ.jpg'
-    import imgEnvair from '$lib/img/brave_xoRV8bdcPu.jpg'
-    import imgSmg from '$lib/img/brave_u8khNcDWNy.png'
-    import imgEckoh from '$lib/img/brave_TIeRT22jcu.jpg'
-
-    const featuredProjects = [
-        {
-            title: 'Ravencards',
-            description: `Landing page design for SRS app, demonstrating visual hierarchy, persuasive copy, and UI principles.`,
-            image: imgRavencards,
-            link: 'https://www.google.com'
-        }
-    ]
+    // import imgRavencards from '$lib/img/brave_1BDbjzbySx.jpg'
+    // const featuredProjects = [
+    //     {
+    //         title: 'Ravencards',
+    //         description: `Landing page design for SRS app, demonstrating visual hierarchy, persuasive copy, and UI principles.`,
+    //         image: imgRavencards,
+    //         link: 'https://www.google.com'
+    //     }
+    // ]
 
     const honchoProjects = [
         {
@@ -25,7 +24,7 @@
             link: 'https://www.outwardbound.org.uk/'
         },
         {
-            title: 'envair',
+            title: 'Envair Technology',
             description: `Visual refresh for Envair Technology's website, aligning with their cutting-edge brand and enhancing user experience.`,
             image: imgEnvair,
             link: 'https://envairtechnology.com/'
@@ -37,7 +36,7 @@
             link: 'https://honcho.agency'
         },
         {
-            title: 'SMG',
+            title: 'Santa Marta Group',
             description: `We collaborated with the Santa Marta Group to modernize their website, ensuring alignment with their mission and increased online efficacy.`,
             image: imgSmg,
             link: 'https://santamartagroup.org/'
@@ -82,20 +81,25 @@
         </div> -->
 
         <div>
-            <p class="mb-4 text-xl">Websites worked on whilst at <a class="anchor" href="https://honcho.agency" target="_blank">Honcho</a></p>
+            <p class="mb-4 text-2xl">Websites I've worked on whilst at <a class="anchor" href="https://honcho.agency" target="_blank">Honcho</a></p>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
                 {#each honchoProjects as honchoProject}
                     <a href={honchoProject.link} class="card variant-glass-primary rounded-xl overflow-hidden outline-none focus:outline-primary-500" target="_blank">
                         <header class="card-header p-px">
                             <figure class="relative">
                                 <div class="absolute top-0 -translate-x-1/2 left-1/2 bg-primary-500 px-4 pt-1 rounded-b">Honcho</div>
-                                <img src={honchoProject.image} alt={honchoProject.title} class="scale-105 w-full h-48 object-cover object-top">
+                                
+                                <enhanced:img
+                                    src="{honchoProject.image}"
+                                    alt={honchoProject.title}
+                                    class="scale-105 w-full h-auto object-cover object-top"
+                                />
                             </figure>
                         </header>
-                        <section class="p-4">
-                            <h3 class="font-semibold text-lg">{honchoProject.title}</h3>
-                            <p class=" mt-2">{honchoProject.description}</p>
+                        <section class="p-5">
+                            <h3 class="text-2xl !font-medium">{honchoProject.title}</h3>
+                            <p class="text-lg mt-2">{honchoProject.description}</p>
                         </section>
                     </a>
                 {/each}
