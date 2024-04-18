@@ -56,6 +56,15 @@
             link: 'https://www.uk-cpi.com/'
         }
     ]
+
+    const personalProjects = [
+        {
+            title: 'Ravencards',
+            description: `Flashcard app utilizing the Spaced Repetition System (SRS, or leitner system specifically) for optimal learning retention. Built with Svelte and Tauri.`,
+            image: null,
+            link: 'https://github.com/lundregan/ravencards-app'
+        }
+    ]
 </script>
 
 <section class="w-full">
@@ -83,13 +92,31 @@
         </div> -->
 
         <div>
-            <p class="mb-4 text-2xl">Websites I've worked on whilst at <a class="anchor" href="https://honcho.agency" target="_blank">Honcho</a></p>
+            <p class="mb-4 text-2xl text-surface-200">Some of my personal projects</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+                {#each personalProjects as personalProject}
+                    <a href={personalProject.link} class="card variant-glass-secondary rounded-xl overflow-hidden outline-none focus:outline-secondary-500" target="_blank">
+                        <section class="p-5">
+                            <div class="w-full flex justify-between items-center">
+                                <h3 class="text-2xl !font-medium">{personalProject.title}</h3>
+                                <div class="w-4"><FaExternalLinkSquareAlt /></div>
+                            </div>
+                            
+                            <p class="text-lg mt-2">{personalProject.description}</p>
+                        </section>
+                    </a>
+                {/each}
+            </div>
+        </div>
+
+        <div>
+            <p class="mb-4 text-2xl text-surface-200">Websites I've worked on whilst at <a class="anchor" href="https://honcho.agency" target="_blank">Honcho</a></p>
 
             <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
                 {#each honchoProjects as honchoProject}
                     <a href={honchoProject.link} class="card variant-glass-primary rounded-xl overflow-hidden outline-none focus:outline-primary-500" target="_blank">
                         
-
                         <!-- <header class="card-header p-px">
                             <figure class="relative">
                                 <div class="absolute top-0 -translate-x-1/2 left-1/2 bg-primary-500 px-4 pt-1 rounded-b">Honcho</div>
