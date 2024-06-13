@@ -3,3 +3,7 @@
 @tailwind utilities;
 @tailwind variants;
 
+/* Fix for AOS causing overflow, and a scrollbar to appear */
+#page {
+    @apply overflow-hidden;
+}

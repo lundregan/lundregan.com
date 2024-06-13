@@ -53,7 +53,7 @@
 	]
 </script>
 
-<section class="w-full">
+<section class="w-full" data-aos="fade-up">
     <h2 class="h2 font-medium mb-8 font-serif text-left">Technologies I'm using</h2>
     
     <div class="flex flex-wrap justify-between items-center">

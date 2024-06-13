@@ -36,7 +36,8 @@
 	];
 </script>
 
-<footer class="flex flex-col gap-4 items-center py-8">
+<!-- Added delay because previous component (about) has delay on last item -->
+<footer class="flex flex-col gap-4 items-center py-8" data-aos="fade-up" data-aos-delay="300">
 	<div class="flex items-center">
 		{#each socailLinks as socialLink}
 			<a class="p-2 rounded-full group" href={socialLink.href} target="_blank" rel="noreferrer" aria-label={`${socialLink.name} Profile`}>

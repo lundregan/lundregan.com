@@ -32,6 +32,7 @@
     "@fontsource/league-spartan": "^5.0.15",
     "@fontsource/roboto": "^5.0.8",
     "@sveltejs/adapter-static": "^2.0.3",
+    "aos": "^2.3.4",
     "svelte-icons": "^2.1.0"
   }
 }

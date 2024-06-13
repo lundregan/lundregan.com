@@ -68,7 +68,7 @@
 </script>
 
 <section class="w-full">
-    <h2 class="h2 font-medium mb-8 font-serif text-left">Projects</h2>
+    <h2 class="h2 font-medium mb-8 font-serif text-left" data-aos="fade-up">Projects</h2>
 
     <div class="flex flex-col gap-8">
         <!-- <div>
@@ -91,10 +91,10 @@
             </div>
         </div> -->
 
-        <div>
+        <div data-aos="fade-up">
             <p class="mb-4 text-2xl text-surface-200">Some of my personal projects</p>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8" data-aos="fade-in">
                 {#each personalProjects as personalProject}
                     <a href={personalProject.link} class="card variant-glass-secondary rounded-xl overflow-hidden outline-none focus:outline-secondary-500" target="_blank">
                         <section class="p-5">
@@ -110,12 +110,19 @@
             </div>
         </div>
 
-        <div>
+        <div data-aos="fade-up">
             <p class="mb-4 text-2xl text-surface-200">Websites I've worked on whilst at <a class="anchor" href="https://honcho.agency" target="_blank">Honcho</a></p>
 
             <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
-                {#each honchoProjects as honchoProject}
-                    <a href={honchoProject.link} class="card variant-glass-primary rounded-xl overflow-hidden outline-none focus:outline-primary-500" target="_blank">
+                {#each honchoProjects as honchoProject, index}
+                    <a
+                        href={honchoProject.link}
+                        class="card variant-glass-primary rounded-xl overflow-hidden outline-none focus:outline-primary-500"
+                        target="_blank"
+                        data-aos="fade-in"
+                        data-aos-delay={index * 100}
+                        data-aos-offset="0"
+                    >
                         
                         <!-- <header class="card-header p-px">
                             <figure class="relative">

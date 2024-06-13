@@ -1,6 +1,7 @@
 <script>
 	import '../app.postcss';
 	import { get } from 'svelte/store';
+	import { onMount } from 'svelte';
 	import { AppShell, AppBar, LightSwitch, Avatar, localStorageStore } from '@skeletonlabs/skeleton';
 
 	import Footer from '$lib/Footer.svelte';
@@ -12,8 +13,16 @@
 	// Fonts
 	import "@fontsource/roboto";
 	import "@fontsource/league-spartan";
+
+	// Animate on scroll
+	import AOS from 'aos';
+	import 'aos/dist/aos.css';
 	
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
+
+	onMount(() => {
+		AOS.init();
+	});
 </script>
 
 <svelte:head>
