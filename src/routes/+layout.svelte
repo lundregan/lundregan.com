@@ -16,6 +16,7 @@
 
 	// Animate on scroll
 	import AOS from 'aos';
+	import 'aos/dist/aos.css';
 	
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 
