@@ -1,21 +1,17 @@
-# create-svelte
+# About
+My personal website, [lundregan.com](https://lundregan.com). It's a platform designed to introduce myself to the web, showcasing my skills, experience, and interests.
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+## Links
+- [Production](https://lundregan.com/)
+- [Staging](https://dev.lundregan.com/)
 
-[Production](https://lundregan.com)
-[Development](https://dev.lundregan.com)
+## Tech Stack
+- [Sveltekit](https://kit.svelte.dev/)
+- [Tailwind](https://tailwindcss.com/)
+- [Skeleton UI](https://www.skeleton.dev/)
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+## Lighthouse Results - Prod 13/06/24
+![image](https://github.com/lundregan/lundregan.com/assets/61918174/2a25e4cf-e910-4132-ae7b-ba448a6b783c)
 
 ## Developing
 
@@ -37,5 +33,3 @@ npm run build
 ```
 
 You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
