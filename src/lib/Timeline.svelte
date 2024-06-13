@@ -24,15 +24,17 @@
             year: '2016'
         }
     ]
+
+    const aosBaseOffset = 100
 </script>
 
 <!-- component -->
 <div class="container mx-auto w-full h-full my-16">
     <div class="relative wrap overflow-hidden h-full">
-        <div class="border-transparent border-2-2 absolute border-opacity-20 md:border-surface-600 h-full border" style="left: 50%"></div>
+        <div data-aos="fade-in" data-aos-offset="{aosBaseOffset}" class="border-transparent border-2-2 absolute border-opacity-20 md:border-surface-600 h-full border" style="left: 50%"></div>
         
         {#each timelineItemsList as timelineItem, index}
-            <TimelineItem data={timelineItem} index={index} />
+            <TimelineItem data={timelineItem} index={index} aosBaseOffset={aosBaseOffset} />
         {/each}
     </div>
 </div>
