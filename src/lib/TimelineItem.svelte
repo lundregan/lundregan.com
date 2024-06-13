@@ -1,8 +1,15 @@
 <script>
+  import { onMount } from 'svelte';
+  import AOS from 'aos';
+
   export let data, index;
+
+  onMount(() => {
+    AOS.refresh();
+  });
 </script>
 
-<div class="my-8 flex justify-between {index % 2 === 1 ? 'md:flex-row-reverse' : ''} items-center w-full right-timeline">
+<div data-aos="{index % 2 === 1 ? 'fade-right' : 'fade-left'}" class="my-8 flex justify-between {index % 2 === 1 ? 'md:flex-row-reverse' : ''} items-center w-full right-timeline">
   <div class="order-1 w-5/12 hidden md:block"></div>
   <div class="z-20 flex items-center order-1 bg-blue-800 pt-0.5 shadow-xl px-3 rounded-full mr-4 md:mr-0">
     <span class="mx-auto font-medium font-serif text-lg text-white">{data.year}</span>
