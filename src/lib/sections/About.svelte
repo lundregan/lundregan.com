@@ -25,7 +25,7 @@
 	]
 </script>
 
-<section class="flex flex-col gap-16" id="anchor-about">
+<section class="flex flex-col gap-16" id="anchor-about" data-aos="fade-up">
     <div class="text-xl font-medium w-full">
         <div class="relative">
             <h1 class="h1 font-medium mb-8 font-serif">About</h1>
@@ -61,8 +61,12 @@
     <Timeline />
 
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        {#each showcaseSkills as skill}
-            <div class="card variant-ringed-primary p-4 flex flex-col gap-4 items-center hover:scale-105 transition-transform">
+        {#each showcaseSkills as skill, index}
+            <div
+                class="card variant-ringed-primary p-4 flex flex-col gap-4 items-center hover:scale-105 transition-transform"
+                data-aos="fade-up"
+                data-aos-delay="{index * 100}"
+            >
                 <div class="w-16 mx-auto text-primary-500 py-4">
                     <svelte:component this={skill.icon} />
                 </div>

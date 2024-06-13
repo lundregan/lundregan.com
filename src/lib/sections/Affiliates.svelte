@@ -21,7 +21,7 @@
 	]
 </script>
 
-<section class="w-full">
+<section class="w-full" data-aos="fade-up">
     <h2 class="h3 dark:text-gray-400 px-8 text-left sm:text-center font-serif">
         Proudly worked with:
     </h2>
