@@ -1,10 +1,5 @@
 <script>
   import { onMount } from 'svelte';
-  import AOS from 'aos';
-
-  onMount(() => {
-    AOS.refresh();
-  });
 
   // set the offset for the timeline items, makes animation waterfall more obvious
   $: offset = index * aosBaseOffset;
