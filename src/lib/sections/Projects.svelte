@@ -76,7 +76,7 @@
 <section class="w-full">
     <h2 class="mb-8 font-serif font-medium text-left h2" data-aos="fade-up">Projects</h2>
 
-    <div class="flex flex-col gap-8">
+    <div class="flex flex-col gap-10">
         <!-- <div>
             <div class="grid grid-cols-1 gap-8">
                 {#each featuredProjects as project}
