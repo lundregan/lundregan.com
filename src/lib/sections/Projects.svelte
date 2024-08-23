@@ -98,7 +98,7 @@
         </div> -->
 
         <div data-aos="fade-up">
-            <p class="mb-4 text-2xl text-surface-200">Some of my personal projects</p>
+            <p class="mb-4 text-2xl dark:text-surface-200">Some of my personal projects</p>
 
             <div class="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3" data-aos="fade-in">
                 {#each personalProjects as personalProject}
@@ -117,7 +117,7 @@
         </div>
 
         <div data-aos="fade-up">
-            <p class="mb-4 text-2xl text-surface-200">Websites I've worked on whilst at <a class="anchor" href="https://honcho.agency" target="_blank">Honcho</a></p>
+            <p class="mb-4 text-2xl dark:text-surface-200">Websites I've worked on whilst at <a class="anchor" href="https://honcho.agency" target="_blank">Honcho</a></p>
 
             <div class="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
                 {#each honchoProjects as honchoProject, index}
