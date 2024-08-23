@@ -37,15 +37,15 @@
 </script>
 
 <!-- Added delay because previous component (about) has delay on last item -->
-<footer class="flex flex-col gap-4 items-center py-8" data-aos="fade-up" data-aos-delay="300">
+<footer class="flex flex-col items-center gap-4 py-8" data-aos="fade-up" data-aos-delay="300">
 	<div class="flex items-center">
 		{#each socailLinks as socialLink}
 			<a class="p-2 rounded-full group" href={socialLink.href} target="_blank" rel="noreferrer" aria-label={`${socialLink.name} Profile`}>
-				<div class="p-3 btn btn-sm group-hover:-translate-y-2 duration-300 btn-icon  variant-outline-primary dark:text-white text-primary-500">
+				<div class="p-3 duration-300 btn btn-sm group-hover:-translate-y-2 btn-icon variant-outline-primary dark:text-white text-primary-500">
                     <svelte:component this={socialLink.icon} />
                 </div>
 			</a>
 		{/each}
 	</div>
-	<span class="text-gray-400 text-xl">Ethan Lundregan © 2023</span>
+	<span class="text-xl dark:text-gray-400">Ethan Lundregan © 2023</span>
 </footer>

@@ -54,11 +54,11 @@
 </script>
 
 <section class="w-full" data-aos="fade-up">
-    <h2 class="h2 font-medium mb-8 font-serif text-left">Technologies I'm using</h2>
+    <h2 class="mb-8 font-serif font-medium text-left h2">Technologies I'm using</h2>
     
-    <div class="flex flex-wrap justify-between items-center">
+    <div class="flex flex-wrap items-center justify-between">
         {#each skills as skill}
-            <div class="h-20 md:h-28 text-gray-400 p-3 sm:p-4 { skill.iconColor ? skill.iconColor : 'hover:text-white'}">
+            <div class="h-20 md:h-28 text-gray-800 dark:text-gray-400 p-3 sm:p-4 { skill.iconColor ? skill.iconColor : 'hover:text-white'}">
                 <svelte:component this={skill.icon} class="transition" />
             </div>
         {/each}

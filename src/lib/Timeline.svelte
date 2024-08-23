@@ -3,6 +3,13 @@
 
     const timelineItemsList = [
         {
+            heading: 'Bensons for Beds',
+            subheading: 'Front-end Developer',
+            text: 'Developing and maintaining the Evesleep website, ensuring a seamless user experience and a high level of performance across all devices, and developing of new features.',
+            link: 'https://bensonsforbeds.co.uk',
+            year: '2024'
+        },    
+        {
             heading: 'Honcho',
             subheading: 'Web Developer',
             text: 'Developing custom and impactful web solutions, uniquely tailored to meet the distinct needs for a plethora of clientele',
@@ -29,9 +36,9 @@
 </script>
 
 <!-- component -->
-<div class="container mx-auto w-full h-full my-16">
-    <div class="relative wrap overflow-hidden h-full">
-        <div data-aos="fade-in" data-aos-offset="{aosBaseOffset}" class="border-transparent border-2-2 absolute border-opacity-20 md:border-surface-600 h-full border" style="left: 50%"></div>
+<div class="container w-full h-full mx-auto my-16">
+    <div class="relative h-full overflow-hidden wrap">
+        <div data-aos="fade-in" data-aos-offset="{aosBaseOffset}" class="absolute h-full border border-transparent border-2-2 border-opacity-20 md:border-surface-600" style="left: 50%"></div>
         
         {#each timelineItemsList as timelineItem, index}
             <TimelineItem data={timelineItem} index={index} aosBaseOffset={aosBaseOffset} />
