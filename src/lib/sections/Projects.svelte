@@ -59,6 +59,12 @@
 
     const personalProjects = [
         {
+            title: 'Framework Clothing',
+            description: `E-commerce website for Framework Clothing, a clothing brand focused on developers. Built with Shopify theme, alpinejs, and tailwindcss.`,
+            image: null,
+            link: 'https://frameworkclothing.co.uk'
+        },
+        {
             title: 'Ravencards',
             description: `Flashcard app utilizing the Spaced Repetition System (SRS, or leitner system specifically) for optimal learning retention. Built with Svelte and Tauri.`,
             image: null,
@@ -68,73 +74,80 @@
 </script>
 
 <section class="w-full">
-    <h2 class="h2 font-medium mb-8 font-serif text-left">Projects</h2>
+    <h2 class="mb-8 font-serif font-medium text-left h2" data-aos="fade-up">Projects</h2>
 
     <div class="flex flex-col gap-8">
         <!-- <div>
             <div class="grid grid-cols-1 gap-8">
                 {#each featuredProjects as project}
-                    <div class="card variant-glass-primary rounded-xl overflow-hidden block z-10">
-                        <header class="card-header p-px"><figure class="relative">
-                            <div class="absolute top-0 -translate-x-1/2 left-1/2 bg-primary-500 px-4 pt-1 rounded-b">Honcho</div>
-                            <img src={project.image} alt={project.title} class="z-0 scale-105 block w-full h-80 object-cover object-center">
+                    <div class="z-10 block overflow-hidden card variant-glass-primary rounded-xl">
+                        <header class="p-px card-header"><figure class="relative">
+                            <div class="absolute top-0 px-4 pt-1 -translate-x-1/2 rounded-b left-1/2 bg-primary-500">Honcho</div>
+                            <img src={project.image} alt={project.title} class="z-0 block object-cover object-center w-full scale-105 h-80">
                         </figure></header>
                         <section class="p-4">
-                            <h3 class="font-semibold text-lg">{project.title}</h3>
-                            <p class=" mt-2">{project.description}</p>
+                            <h3 class="text-lg font-semibold">{project.title}</h3>
+                            <p class="mt-2 ">{project.description}</p>
                         </section>
                         <footer class="card-footer">
-                            <a href={project.link} class="block text-blue-500 mt-2">View Project</a>
+                            <a href={project.link} class="block mt-2 text-blue-500">View Project</a>
                         </footer>
                     </div>
                 {/each}
             </div>
         </div> -->
 
-        <div>
+        <div data-aos="fade-up">
             <p class="mb-4 text-2xl text-surface-200">Some of my personal projects</p>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3" data-aos="fade-in">
                 {#each personalProjects as personalProject}
-                    <a href={personalProject.link} class="card variant-glass-secondary rounded-xl overflow-hidden outline-none focus:outline-secondary-500" target="_blank">
+                    <a href={personalProject.link} class="overflow-hidden outline-none card variant-glass-secondary rounded-xl focus:outline-secondary-500" target="_blank">
                         <section class="p-5">
-                            <div class="w-full flex justify-between items-center">
+                            <div class="flex items-center justify-between w-full">
                                 <h3 class="text-2xl !font-medium">{personalProject.title}</h3>
                                 <div class="w-4"><FaExternalLinkSquareAlt /></div>
                             </div>
                             
-                            <p class="text-lg mt-2">{personalProject.description}</p>
+                            <p class="mt-2 text-lg">{personalProject.description}</p>
                         </section>
                     </a>
                 {/each}
             </div>
         </div>
 
-        <div>
+        <div data-aos="fade-up">
             <p class="mb-4 text-2xl text-surface-200">Websites I've worked on whilst at <a class="anchor" href="https://honcho.agency" target="_blank">Honcho</a></p>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
-                {#each honchoProjects as honchoProject}
-                    <a href={honchoProject.link} class="card variant-glass-primary rounded-xl overflow-hidden outline-none focus:outline-primary-500" target="_blank">
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
+                {#each honchoProjects as honchoProject, index}
+                    <a
+                        href={honchoProject.link}
+                        class="overflow-hidden outline-none card variant-glass-primary rounded-xl focus:outline-primary-500"
+                        target="_blank"
+                        data-aos="fade-in"
+                        data-aos-delay={index * 100}
+                        data-aos-offset="0"
+                    >
                         
-                        <!-- <header class="card-header p-px">
+                        <!-- <header class="p-px card-header">
                             <figure class="relative">
-                                <div class="absolute top-0 -translate-x-1/2 left-1/2 bg-primary-500 px-4 pt-1 rounded-b">Honcho</div>
+                                <div class="absolute top-0 px-4 pt-1 -translate-x-1/2 rounded-b left-1/2 bg-primary-500">Honcho</div>
                                 
                                 <enhanced:img
                                     src="{honchoProject.image}"
                                     alt={honchoProject.title}
-                                    class="scale-105 w-full h-auto object-cover object-top"
+                                    class="object-cover object-top w-full h-auto scale-105"
                                 />
                             </figure>
                         </header> -->
                         <section class="p-5">
-                            <div class="w-full flex justify-between items-center">
+                            <div class="flex items-center justify-between w-full">
                                 <h3 class="text-2xl !font-medium">{honchoProject.title}</h3>
                                 <div class="w-4"><FaExternalLinkSquareAlt /></div>
                             </div>
                             
-                            <p class="text-lg mt-2">{honchoProject.description}</p>
+                            <p class="mt-2 text-lg">{honchoProject.description}</p>
                         </section>
                     </a>
                 {/each}
