@@ -1,8 +1,0 @@
-# humanstxt.org
-
-/* TEAM */
-
-Authors: Ethan Lundregan                         
-Email: contact@lundregan.com            
-Twitter: LundreganDev                     
-Location: Cardiff, United Kingdom.

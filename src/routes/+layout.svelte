@@ -1,58 +1,25 @@
 <script>
-	import '../app.postcss';
-	import { get } from 'svelte/store';
-	import { onMount } from 'svelte';
-	import { AppShell, AppBar, LightSwitch, Avatar, localStorageStore } from '@skeletonlabs/skeleton';
-
-	import Footer from '$lib/Footer.svelte';
-
-	// Floating UI for Popups
-	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
-	import { storePopup } from '@skeletonlabs/skeleton';
-
-	// Fonts
-	import "@fontsource/roboto";
-	import "@fontsource/league-spartan";
-
-	// Animate on scroll
-	import AOS from 'aos';
-	import 'aos/dist/aos.css';
+	import '../app.css';
+	import '@fontsource/tomorrow';
 	
-	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
-
-	onMount(() => {
-		AOS.init();
-	});
+	let { children } = $props();
 </script>
 
-<svelte:head>
-	<title>Lundregan.com</title>
-	<meta name="description" content="Web developer from cardiff">
-	<meta name="keywords" content="Cardiff, Web Developer, Developer, UK, Programmer">
-	<meta name="author" content="Ethan Lundregan">
+<svelte:head> 
+	<link rel="preload" as="font" href="/fonts/custom-font.woff2" type="font/woff2" crossorigin="anonymous">
 </svelte:head>
 
-<!-- App Shell -->
-<AppShell>
-	<svelte:fragment slot="header">
-		<!-- App Bar -->
-		<AppBar background="bg-primary">
-			<svelte:fragment slot="lead">
-				<Avatar
-					src="https://i.ibb.co/RQMCdT4/public-profile-square-styled-blue.png"
-					width="w-14"
-					rounded="rounded-full"
-				/>
-			</svelte:fragment>
-			<svelte:fragment slot="trail">
-				<LightSwitch />
-			</svelte:fragment>
-		</AppBar>
-	</svelte:fragment>
+<div class="navbar bg-base-100 shadow-sm">
+	<div class="flex-1">
+		<a class="btn btn-ghost text-xl">Lundregan</a>
+	</div>
+	<div class="flex-none">
+		<button class="btn btn-square btn-ghost">
+		<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block h-5 w-5 stroke-current"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path> </svg>
+		</button>
+	</div>
+</div>
 
-	<slot />
-
-	<svelte:fragment slot="pageFooter">
-		<Footer />
-	</svelte:fragment>
-</AppShell>
+<div class="px-[10vw]">
+	{@render children()}
+</div>

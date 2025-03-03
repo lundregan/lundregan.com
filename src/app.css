@@ -1,0 +1,11 @@
+@import 'tailwindcss';
+
+@plugin '@tailwindcss/typography';
+@plugin '@tailwindcss/forms';
+@plugin "daisyui"{
+    themes: dark;
+}
+
+@theme {
+    --font-tomorrow: "Tomorrow";
+}
