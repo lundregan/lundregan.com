@@ -2,7 +2,7 @@
 	import Icon from '@iconify/svelte';
 </script>
 
-<div class="my-40">
+<div class="my-80">
 	<div class="flex items-center gap-2 text-red-500">
 		<Icon class=""icon="gis:location-poi" />
 		<h1 class="">UK, Ethan Lundregan</h1>
