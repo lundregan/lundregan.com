@@ -8,7 +8,7 @@
 </script>
 
 <svelte:head> 
-	<link rel="preload" as="font" href="/fonts/custom-font.woff2" type="font/woff2" crossorigin="anonymous">
+	<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
 </svelte:head>
 
 <Navbar />
