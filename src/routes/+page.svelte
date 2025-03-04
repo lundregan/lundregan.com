@@ -13,7 +13,7 @@
 
     <FeaturedProjects />
     
-    <WorkedWith />
-
     <FeaturedWork />
+    
+    <WorkedWith />
 </div>
