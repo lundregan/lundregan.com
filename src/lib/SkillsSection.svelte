@@ -100,9 +100,11 @@
 		<div class="my-8 flex flex-wrap gap-4 rounded-xl">
 			{#each skills as skill}
 				{#if test === 'all' || test === skill.type}
-					<div class="flex items-center gap-4 rounded-md bg-zinc-900 px-4 py-3">
-						<Icon class="text-2xl" icon={skill.icon} />
-						<span class="text-xl font-medium">{skill.name}</span>
+					<div class="flex items-center gap-4 rounded-md bg-zinc-900 p-3">
+						<div class="tooltip" data-tip={skill.name}>
+							<Icon class="text-5xl" icon={skill.icon} />
+						</div>
+						<!-- <span class="text-xl font-medium">{skill.name}</span> -->
 					</div>
 				{/if}
 			{/each}
