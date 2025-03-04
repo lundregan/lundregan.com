@@ -77,22 +77,22 @@
 
 	<div class="">
 		<form class="filter">
-			<input class="btn btn-square" type="reset" value="×" name="all" on:click={(test = 'all')} />
+			<input class="btn btn-square btn-soft text-xs" type="reset" value="×" name="all" on:click={(test = 'all')} />
 			<input
-				class="btn"
+				class="btn btn-soft font-normal"
 				type="radio"
 				name="frontend"
 				aria-label="Frontend"
 				on:change={filterOnChange}
 			/>
 			<input
-				class="btn"
+				class="btn btn-soft font-normal"
 				type="radio"
 				name="backend"
 				aria-label="Backend"
 				on:change={filterOnChange}
 			/>
-			<input class="btn" type="radio" name="misc" aria-label="Misc" on:change={filterOnChange} />
+			<input class="btn btn-soft font-normal" type="radio" name="misc" aria-label="Misc" on:change={filterOnChange} />
 		</form>
 
 		<!-- <p>{test}</p> -->
