@@ -1,11 +1,12 @@
 <script>
+	import { onMount } from 'svelte';
 	import Icon from '@iconify/svelte';
+	import Glide, { Controls, Breakpoints, Autoplay } from '@glidejs/glide/dist/glide.modular.esm';
 
+	import Heading from './Heading.svelte';
 	import image_ravencards from '$lib/assets/screenshot_ravencards.png';
 	import image_game from '$lib/assets/screenshot_game.png';
-	import { onMount } from 'svelte';
 
-	import Glide, { Controls, Breakpoints, Autoplay } from '@glidejs/glide/dist/glide.modular.esm';
 
 	onMount(() => {
 		new Glide('.glide', {
@@ -21,9 +22,9 @@
 </script>
 
 <div>
-	<h2 class="text-xl text-red-500">projects:</h2>
+	<Heading text="projects" />
 
-	<div class="glide relative mt-4">
+	<div class="glide relative">
 		<div data-glide-el="track" class="glide__track">
 			<ul class="glide__slides">
 				<div class="flex">

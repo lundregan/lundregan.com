@@ -9,10 +9,10 @@
 <div class="flex flex-col gap-16 pb-30">
     <Hero />
 
-    <SkillsSection />
-
     <FeaturedProjects />
     
+    <SkillsSection />
+
     <FeaturedWork />
     
     <WorkedWith />

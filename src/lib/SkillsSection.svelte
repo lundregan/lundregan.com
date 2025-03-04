@@ -1,5 +1,6 @@
 <script>
 	import Icon from '@iconify/svelte';
+    import Heading from './Heading.svelte';
 
 	const skills = [
 		{
@@ -72,9 +73,9 @@
 </script>
 
 <div>
-	<h2 class="text-xl text-red-500">skills:</h2>
+    <Heading text="skills" />
 
-	<div class="mt-4">
+	<div class="">
 		<form class="filter">
 			<input class="btn btn-square" type="reset" value="×" name="all" on:click={(test = 'all')} />
 			<input

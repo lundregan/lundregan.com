@@ -1,7 +1,11 @@
-<div>
-	<h2 class="text-xl text-red-500">Proudly worked with:</h2>
+<script>
+	import Heading from "./Heading.svelte";
+</script>
 
-	<div class="mt-4 flex items-center justify-between gap-4">
+<div>
+	<Heading text="Worked with" />
+
+	<div class="flex items-center justify-between gap-4">
 		<svg
 			width="301"
 			height="116"

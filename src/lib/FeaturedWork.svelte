@@ -1,4 +1,5 @@
 <script>
+	import Heading from './Heading.svelte';
 	import image_cpi from '$lib/assets/screenshot_cpi.png';
 	import image_honcho from '$lib/assets/screenshot_honcho.png';
 	import image_ob from '$lib/assets/screenshot_ob.png';
@@ -29,9 +30,9 @@
 </script>
 
 <div>
-	<h2 class="text-xl text-red-500">work:</h2>
+    <Heading text="work" />
 
-	<div class="mt-4 flex flex-col gap-6">
+	<div class="flex flex-col gap-6">
 		{#each works as work}
 			<div class="flex">
 				<img class="w-1/3 rounded-l-xl object-cover" src={work.image} alt="" />
