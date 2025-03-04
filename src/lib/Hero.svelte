@@ -35,7 +35,7 @@
 	<div class="flex mt-2">
 		{#each links as link}
 			<a class="group px-1" href={link.url} target="_blank" rel="noopener noreferrer">
-				<Icon class="transition text-3xl group-hover:-translate-y-1.5" icon={link.icon} />
+				<Icon class="transition text-3xl group-hover:scale-125 group-hover:-translate-y-1.5" icon={link.icon} />
 			</a>
 		{/each}
 	</div>
