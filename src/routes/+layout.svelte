@@ -14,7 +14,7 @@
 
 <Navbar />
 
-<div class="px-[10vw]">
+<div class="">
 	{@render children()}
 </div>
 

@@ -6,14 +6,17 @@
     import SkillsSection from '$lib/SkillsSection.svelte';
 </script>
 
-<div class="flex flex-col gap-16 pb-30">
+<div class="flex flex-col items-center gap-16 pb-30">
     <Hero />
-
-    <FeaturedProjects />
     
-    <SkillsSection />
-
-    <FeaturedWork />
-    
-    <WorkedWith />
+    <div class="flex flex-col gap-16 pb-30 max-w-7xl mx-8">
+        
+        <FeaturedProjects />
+        
+        <SkillsSection />
+        
+        <FeaturedWork />
+        
+        <WorkedWith />
+    </div>
 </div>
